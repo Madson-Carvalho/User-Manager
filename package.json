@@ -1,0 +1,33 @@
+{
+  "name": "user-manager",
+  "version": "1.0.0",
+  "description": "CRUD of users",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node ./src/index.ts\"",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "test": "jest"
+  },
+  "author": "Madson Carvalho",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^22.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^5.18.0",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2"
+  }
+}
